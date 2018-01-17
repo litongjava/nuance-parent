@@ -100,6 +100,9 @@ class FFMPEGExecutor {
 			cmd[i + 1] = (String) args.get(i);
 		}
 		Runtime runtime = Runtime.getRuntime();
+		//我的操作系统是win10 64位,会出现下面的异常信息
+		//Caused by: java.io.IOException: CreateProcess error=193, %1 不是有效的 Win32 应用程序。
+		//runtime.exec("cmd /c "+cmd);
 		ffmpeg = runtime.exec(cmd);
 		ffmpegKiller = new ProcessKiller(ffmpeg);
 		runtime.addShutdownHook(ffmpegKiller);
