@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>nve-jave</artifactId>
-    <version>1.0</version>
+    <artifactId>nte-test</artifactId>
     <packaging>jar</packaging>
 
     <properties>
@@ -31,11 +30,9 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>com.neovisionaries</groupId>
-            <artifactId>nv-websocket-client</artifactId>
-            <version>1.30</version>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
         </dependency>
     </dependencies>
 

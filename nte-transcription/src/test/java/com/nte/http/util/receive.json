@@ -1,0 +1,115 @@
+{
+  "reference": "4fbbc4b0-fa9b-11e7-828a-a12be1e73543",
+  "channels": {
+    "channel1": {
+      "transcript": [
+        {
+          "speaker": "1",
+          "start": 7.82,
+          "end": 8.22,
+          "text": "喂"
+        },
+        {
+          "speaker": "2",
+          "start": 8.7,
+          "end": 10.74,
+          "text": "你好请问是张先生吗？"
+        },
+        {
+          "speaker": "1",
+          "start": 10.74,
+          "end": 11.66,
+          "text": "对你好，"
+        },
+        {
+          "speaker": "2",
+          "start": 11.66,
+          "end": 21.46,
+          "text": "我是汽车之家看到船的客服代表感谢您之前方参加了四个的看他他活动，因为活动需要制作成的回访请问现在1月13号下午2点到方现场了吗？"
+        },
+        {
+          "speaker": "1",
+          "start": 22.88,
+          "end": 25.74,
+          "text": "没有我没没选择，我我"
+        },
+        {
+          "speaker": "2",
+          "start": 27.6,
+          "end": 31.44,
+          "text": "您是就是，就是因为是什么原因没有参加呢先生"
+        },
+        {
+          "speaker": "1",
+          "start": 32.64,
+          "end": 36.08,
+          "text": "那个我我我看看我直接进来就，"
+        },
+        {
+          "speaker": "2",
+          "start": 36.18,
+          "end": 39.24,
+          "text": "你到别的地方就是已经构成了什么，"
+        },
+        {
+          "speaker": "1",
+          "start": 39.24,
+          "end": 39.86,
+          "text": "对对，"
+        },
+        {
+          "speaker": "2",
+          "start": 39.86,
+          "end": 43.78,
+          "text": "那不行你过车。那先生您对我们其实加上什么以前我建议呢"
+        },
+        {
+          "speaker": "1",
+          "start": 44.28,
+          "end": 45.04,
+          "text": "嗯没有没有"
+        },
+        {
+          "speaker": "2",
+          "start": 46,
+          "end": 48.34,
+          "text": "这种气压值是嗯中间会快，再见"
+        }
+      ],
+      "errors": [],
+      "statistics": {
+        "transcription_time": 9704,
+        "audio_analysis_time": 14,
+        "merge_time": 39,
+        "formatting_time": 10,
+        "audio_channels": 1,
+        "audio_length": 53.3,
+        "content_fetch_time": 45,
+        "segmentation_time": 149,
+        "diarization_time": 2639,
+        "execution_time": 12605
+      }
+    }
+  },
+  "operating_mode": "fast",
+  "status": "TRANSCRIBED",
+  "statistics": {
+    "_transcription_time":"转写时间",
+    "transcription_time": 9704,
+    "_audio_analysis_time":"声音分析时间",
+    "audio_analysis_time": 14,
+    "_merge_time":"合并时间",
+    "merge_time": 39,
+    "_job_preparation_time":"任务准备时间",
+    "job_preparation_time": 0,
+    "_formatting_time":"内容格式化时间",
+    "formatting_time": 10,
+
+    "content_fetch_time": [
+      45
+    ],
+    "request_processing_time": 7,
+    "segmentation_time": 149,
+    "diarization_time": 2639
+  }
+}

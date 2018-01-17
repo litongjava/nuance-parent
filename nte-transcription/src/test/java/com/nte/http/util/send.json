@@ -1,0 +1,16 @@
+{
+  "channels": {
+    "channel1": {
+      "num_speakers": 2,
+      "diarize": true,
+      "format": "audio/wave",
+      "result_format": "transcript",
+      "result_version": 1,
+      "url": "http://111.202.106.147:1028/QCSystem/Tape/2018/01/11/out-18938403466-2036-20180111-183050-1515666650.9277.wav"
+    }
+  },
+  "operating_mode": "fast",
+  "model": {
+    "name": "zho-chn"
+  }
+}

@@ -10,6 +10,8 @@
     <modules>
         <module>nte-transcription</module>
         <module>nve-jave</module>
+        <module>nte-test</module>
+        <module>nte-study</module>
     </modules>
 
     <parent>
