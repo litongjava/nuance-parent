@@ -8,10 +8,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>nte-test</artifactId>
+    <!--语音转写-->
+    <artifactId>nte-transcription</artifactId>
     <packaging>jar</packaging>
-
     <properties>
         <!-- 文件拷贝时的编码 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,27 +30,24 @@
             <artifactId>slf4j-log4j12</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.38</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>com.hg</groupId>
-            <artifactId>nve-jave</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.neovisionaries</groupId>
+            <artifactId>nv-websocket-client</artifactId>
+            <version>1.30</version>
         </dependency>
 
         <dependency>
-            <groupId>com.hg</groupId>
-            <artifactId>nte-transcription</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-            <version>1.2</version>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
         </dependency>
     </dependencies>
-
-
 </project>

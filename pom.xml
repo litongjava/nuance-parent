@@ -12,6 +12,7 @@
         <module>nve-jave</module>
         <module>nte-test</module>
         <module>nte-study</module>
+        <module>nte-tts</module>
     </modules>
 
     <parent>
