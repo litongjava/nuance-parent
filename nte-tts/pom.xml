@@ -6,7 +6,7 @@
 		<artifactId>nuance-parent</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>nte-tts</artifactId>
+	<artifactId>nve-tts</artifactId>
 	<properties>
 		<!-- 指定文件拷贝时的编码 -->
 		<java.version>1.8</java.version>

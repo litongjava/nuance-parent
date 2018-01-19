@@ -1,0 +1,26 @@
+14:37:26,704  INFO SingleThreadNTEClient:68 - 发送json到nte:{"channels":{"channel1":{"num_speakers":2,"diarize":true,"format":"audio/wave","result_format":"transcript","result_version":1,"url":"http://192.168.28.100:8080/tape/t92022000_20180110_085357.wav"}},"operating_mode":"fast","model":{"name":"zho-chn"}}
+14:37:26,706  INFO NTEHttpClient:56 - parameters:{"channels":{"channel1":{"num_speakers":2,"diarize":true,"format":"audio/wave","result_format":"transcript","result_version":1,"url":"http://192.168.28.100:8080/tape/t92022000_20180110_085357.wav"}},"operating_mode":"fast","model":{"name":"zho-chn"}}
+14:37:27,265  INFO NTEHttpClient:70 - statusCode:200
+14:37:27,265  INFO NTEHttpClient:71 - 调用API 花费时间(单位：毫秒)：555
+14:37:27,267  INFO NTEHttpClient:85 - 调用接口状态：0
+14:37:27,267  INFO SingleThreadNTEClient:146 - 第一次请求的响应:{"reference":"13261690-fd25-11e7-828a-a12be1e73543"}
+14:37:32,276  INFO SingleThreadNTEClient:157 - 根据uuid第1次请求:{"status":"FAILED","reference":"13261690-fd25-11e7-828a-a12be1e73543","operating_mode":"fast","statistics":{"request_processing_time":4,"content_fetch_time":[null],"job_preparation_time":0,"audio_analysis_time":0,"segmentation_time":0,"transcription_time":0,"diarization_time":0,"merge_time":0,"formatting_time":0},"channels":{"channel1":{"errors":[{"message":"Problem with URL http://192.168.28.100:8080/tape/t92022000_20180110_085357.wav; connect ECONNREFUSED","start_time":-1,"end_time":-1}],"statistics":{"audio_length":0,"audio_channels":0,"audio_analysis_time":0,"segmentation_time":0,"transcription_time":0,"diarization_time":0,"merge_time":0,"formatting_time":0,"execution_time":0}}}}
+14:37:35,390  INFO SingleThreadNTEClient:170 - 根据uuid第2次请求:Bad request. No job found for reference: 13261690-fd25-11e7-828a-a12be1e73543
+14:37:35,712  INFO NveJaveUtil:54 - 转换完成:D:\Program Files\apache-tomcat-7-8080\webapps\tape\t92022000_20180110_085357.wav
+14:37:35,866  INFO NveJaveUtil:54 - 转换完成:D:\Program Files\apache-tomcat-7-8080\webapps\tape\t92022000_20180110_144808.wav
+14:37:36,025  INFO NveJaveUtil:54 - 转换完成:D:\Program Files\apache-tomcat-7-8080\webapps\tape\t92022000_20180110_155906.wav
+14:37:36,283  INFO NveJaveUtil:54 - 转换完成:D:\Program Files\apache-tomcat-7-8080\webapps\tape\t92022001_20180110_103338.wav
+14:37:36,421  INFO NveJaveUtil:54 - 转换完成:D:\Program Files\apache-tomcat-7-8080\webapps\tape\t92022001_20180110_112607.wav
+14:37:36,519  INFO NveJaveUtil:54 - 转换完成:D:\Program Files\apache-tomcat-7-8080\webapps\tape\t92022002_20180110_085518.wav
+14:37:36,858  INFO NveJaveUtil:54 - 转换完成:D:\Program Files\apache-tomcat-7-8080\webapps\tape\t92022003_20180110_112657.wav
+14:37:36,905  INFO NveJaveUtil:54 - 转换完成:D:\Program Files\apache-tomcat-7-8080\webapps\tape\t92022007_20180110_152602.wav
+14:37:37,117  INFO NveJaveUtil:54 - 转换完成:D:\Program Files\apache-tomcat-7-8080\webapps\tape\t92022014_20180110_101945.wav
+14:37:37,195  INFO NveJaveUtil:54 - 转换完成:D:\Program Files\apache-tomcat-7-8080\webapps\tape\t92022025_20180110_110053.wav
+14:37:37,196  INFO SingleThreadNTEClient:68 - 发送json到nte:{"channels":{"channel1":{"num_speakers":2,"diarize":true,"format":"audio/wave","result_format":"transcript","result_version":1,"url":"http://192.168.28.100:8080/tape/t92022025_20180110_110053.wav"}},"operating_mode":"fast","model":{"name":"zho-chn"}}
+14:37:37,196  INFO NTEHttpClient:56 - parameters:{"channels":{"channel1":{"num_speakers":2,"diarize":true,"format":"audio/wave","result_format":"transcript","result_version":1,"url":"http://192.168.28.100:8080/tape/t92022025_20180110_110053.wav"}},"operating_mode":"fast","model":{"name":"zho-chn"}}
+14:37:37,204  INFO NTEHttpClient:70 - statusCode:200
+14:37:37,204  INFO NTEHttpClient:71 - 调用API 花费时间(单位：毫秒)：8
+14:37:37,205  INFO NTEHttpClient:85 - 调用接口状态：0
+14:37:37,205  INFO SingleThreadNTEClient:146 - 第一次请求的响应:{"reference":"19140850-fd25-11e7-828a-a12be1e73543"}
+14:37:42,210  INFO SingleThreadNTEClient:157 - 根据uuid第1次请求:{"status":"FAILED","reference":"19140850-fd25-11e7-828a-a12be1e73543","operating_mode":"fast","statistics":{"request_processing_time":4,"content_fetch_time":[null],"job_preparation_time":0,"audio_analysis_time":0,"segmentation_time":0,"transcription_time":0,"diarization_time":0,"merge_time":0,"formatting_time":0},"channels":{"channel1":{"errors":[{"message":"Problem with URL http://192.168.28.100:8080/tape/t92022025_20180110_110053.wav; connect ECONNREFUSED","start_time":-1,"end_time":-1}],"statistics":{"audio_length":0,"audio_channels":0,"audio_analysis_time":0,"segmentation_time":0,"transcription_time":0,"diarization_time":0,"merge_time":0,"formatting_time":0,"execution_time":0}}}}
+14:37:45,268  INFO SingleThreadNTEClient:170 - 根据uuid第2次请求:Bad request. No job found for reference: 19140850-fd25-11e7-828a-a12be1e73543
