@@ -1,4 +1,4 @@
-package main;
+package com.hg.utils;
 
 import it.sauronsoftware.jave.EncoderException;
 import it.sauronsoftware.jave.InputFormatException;
@@ -12,14 +12,14 @@ import static org.junit.Assert.*;
  * Created by litong on 2018/1/17.
  */
 public class WavUtilTest {
-    @Test
+    //@Test
     public void testPrperty() {
         String property = System.getProperty("java.io.tmpdir");
         System.out.println(property);
         //C:\Users\ZHOUYA~1\AppData\Local\Temp\
     }
 
-    @Test
+    //@Test
     public void testStr() {
         String str = "D:\\\\Program Files\\apache-tomcat-7-8000\\webapps\\tape\\t92022000_20180110_085357.mp3";
         int i0 = str.lastIndexOf("\\");
@@ -30,7 +30,7 @@ public class WavUtilTest {
 //        System.out.println(i0+":"+i1+":"+i2);
     }
 
-    @Test
+    //@Test
     public void testFile(){
         File file = new File("D:\\Program Files\\apache-tomcat-7-8000\\webapps\\tape\\t92022000_20180110_085357.wav");
         System.out.println(file.getAbsoluteFile());
@@ -40,14 +40,14 @@ public class WavUtilTest {
         System.out.println(file1.getAbsoluteFile());
     }
 
-    @Test
+    //@Test
     public void test3(){
         File file = new File("D:\\Program Files\\apache-tomcat-7-8000\\webapps\\tape\\t92022000_20180110_085357.mp3");
         System.out.println(file);
         System.out.println(file.getAbsoluteFile());
     }
 
-    @Test
+    //@Test
     public void test5() throws EncoderException {
         formatToWav("D:\\Program Files\\apache-tomcat-7-8000\\webapps\\tape\\t92022000_20180110_085357.mp3");
     }

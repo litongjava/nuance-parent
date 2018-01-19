@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
  */
 public class SingleThreadNTEClientTest {
 
-    @Test
+    //@Test
     public void vts() throws Exception {
         String server_url="http://192.168.28.182:8100";
         SingleThreadNTEClient client = SingleThreadNTEClient.getClient(server_url);
@@ -31,7 +31,7 @@ public class SingleThreadNTEClientTest {
     /**
      * 完成广西电网项目测试
      */
-    @Test
+    //@Test
     public void guangxiTest(){
         List<String> wavs=new ArrayList<>();
         wavs.add("http://192.168.28.100:8080/tape/t92022000_20180110_085357.mp3");

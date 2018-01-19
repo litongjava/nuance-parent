@@ -1,7 +1,9 @@
-package main;
+package com.hg.utils;
 
 import java.io.File;
-import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 
@@ -12,8 +14,8 @@ import it.sauronsoftware.jave.EncoderException;
 import it.sauronsoftware.jave.EncodingAttributes;
 import it.sauronsoftware.jave.InputFormatException;
 
-public class WavUtil {
-    private static Logger log = Logger.getLogger(WavUtil.class);
+public class NveJaveUtil {
+    private static Logger log = Logger.getLogger(NveJaveUtil.class);
 
     /**
      * 格式话音频文件为wav格式
@@ -22,16 +24,11 @@ public class WavUtil {
      * @throws InputFormatException
      * @throws EncoderException
      */
-    public static String formatToWav(String filename) throws IllegalArgumentException, InputFormatException, EncoderException {
-        System.out.println(filename);
+    public static String formatMp3ToWav(String filename) throws IllegalArgumentException, InputFormatException, EncoderException {
         File file = new File(filename);
-
-        System.out.println(file);
-        System.out.println(file.getAbsoluteFile());
 
         String pathFile=filename;
         String path = pathFile.substring(0, pathFile.lastIndexOf("\\") + 1);
-        System.out.println("dirctory is :"+path);
         String fileName = pathFile.substring(pathFile.lastIndexOf("\\") + 1, pathFile.lastIndexOf("."));
 
         String s = path + fileName + ".wav";
@@ -58,19 +55,32 @@ public class WavUtil {
         return target.getAbsolutePath();
     }
 
-    public static void main(String[] args) {
-        try {
-            formatToWav("D:\\Program Files\\apache-tomcat-7-8000\\webapps\\tape\\t92022000_20180110_085357.mp3");
-
-        } catch (IllegalArgumentException e) {
-            log.info("参数不合法");
-            e.printStackTrace();
-        } catch (InputFormatException e) {
-            log.info("输入文件格式异常");
-            e.printStackTrace();
-        } catch (EncoderException e) {
-            log.info("编码异常");
-            e.printStackTrace();
+    public static Map<String,String>  formatMp3ToWav(List<String> wavs) throws EncoderException {
+        Map<String,String> result=new HashMap<>();
+        if(wavs==null || wavs.size()<0){
+            log.info("传入的list为空");
+            return null;
         }
+        for (String wav : wavs) {
+            String target = formatMp3ToWav(wav);
+            result.put(wav,target);
+        }
+        return result;
     }
+
+//    public static void main(String[] args) {
+//        try {
+//            formatToWav("D:\\Program Files\\apache-tomcat-7-8000\\webapps\\tape\\t92022000_20180110_085357.mp3");
+//
+//        } catch (IllegalArgumentException e) {
+//            log.info("参数不合法");
+//            e.printStackTrace();
+//        } catch (InputFormatException e) {
+//            log.info("输入文件格式异常");
+//            e.printStackTrace();
+//        } catch (EncoderException e) {
+//            log.info("编码异常");
+//            e.printStackTrace();
+//        }
+//    }
 }

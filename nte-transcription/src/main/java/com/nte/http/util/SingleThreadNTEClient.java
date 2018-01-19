@@ -9,6 +9,7 @@ import com.nte.pojo.TapeInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -20,7 +21,7 @@ import java.util.Map;
  */
 public class SingleThreadNTEClient {
 
-    private Logger logger = LoggerFactory.getLogger(this.getClass());
+    private static Logger logger = LoggerFactory.getLogger(SingleThreadNTEClient.class);
     private NTEHttpClient httpClient;
     private static SingleThreadNTEClient client;
 
@@ -65,7 +66,11 @@ public class SingleThreadNTEClient {
         List<String> list = getList(wav1, null);
         String json = JSONUtil.getDiarizeJson(list, 0, list.size());
         logger.info("发送json到nte:" + json);
+        //计算转写时长
+        long start = System.currentTimeMillis();
         JSONObject repJson2 = common(json);
+        long end = System.currentTimeMillis();
+        long l = (end - start) / 1000;
         logger.info("第二次响应的信息:" + repJson2.toString());
 
 
@@ -75,7 +80,8 @@ public class SingleThreadNTEClient {
             info.setAudio_length(repJson2.getJSONObject("channels").
                     getJSONObject("channel" + (i + 1)).getJSONObject("statistics").
                     getBigDecimal("audio_length"));
-
+            //设置转写时长
+            info.setTranscription_time(l);
             //转换时有多个对话
             JSONArray transcript = getTranscript("channel" + (i + 1), repJson2);
             logger.info("返回的transcript信息" + transcript.toString());
