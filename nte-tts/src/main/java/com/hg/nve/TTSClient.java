@@ -79,7 +79,13 @@ public class TTSClient {
 		}
 	}
 
-	public static String getVoice(String oriText, OutputStream os) {
+	/**
+	 * 播放文本,返回流写入os
+	 * @param oriText
+	 * @param os
+	 * @return
+	 */
+	public static String playVoice(String oriText, OutputStream os) {
 		TTSClient.text = oriText;
 		TTSClient.os=os;
 		// final String text=replaceSpecStr(oriText);

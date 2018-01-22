@@ -43,7 +43,7 @@ public class TTSClientTest {
 			e.printStackTrace();
 		}
 		String text = "我得名字是李通";
-		String rate = TTSClient.getVoice(text, fos);
+		String rate = TTSClient.playVoice(text, fos);
 		try {
 			fos.close();
 		} catch (IOException e) {
@@ -63,7 +63,7 @@ public class TTSClientTest {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		String text = "中华任命共和国团结万岁";
-		TTSClient.getVoice(text, fos);
+		String text = "中华人民共和国团结万岁";
+		TTSClient.playVoice(text, fos);
 	}
 }

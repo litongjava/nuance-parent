@@ -57,7 +57,7 @@ public class GuangXiTest {
         wavs.add("D:\\Program Files\\apache-tomcat-7-8080\\webapps\\tape\\t92022025_20180110_110053.mp3");
 
         try {
-            NveJaveUtil.formatMp3ToWav(wavs);
+            NveJaveUtil.mp3ToWav(wavs);
         } catch (EncoderException e) {
             e.printStackTrace();
         }

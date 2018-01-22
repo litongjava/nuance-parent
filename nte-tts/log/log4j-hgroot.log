@@ -24026,3 +24026,38 @@
 15:12:06,708  INFO SplitWav:111 - 截取数据长度是:100230
 15:12:06,708  INFO SplitWav:123 - chunk size is:[-86, -121, 1, 0]
 15:12:06,708  INFO SplitWav:124 - sub chunk 2 size is:[-122, -121, 1, 0]
+09:52:07,981  INFO TTSClient:96 - 发送到服务器的信息是=BEGIN_TTS:PCM:Li-sa
+09:52:08,182  INFO TTSWCL:66 - 从服务器接受到的消息是=BEGIN_TTS_R:0
+09:52:08,182  INFO TTSWCL:83 - 发送到服务的消息是=TTS_TEXT:中华任命共和国团结万岁
+09:52:08,385  INFO TTSWCL:66 - 从服务器接受到的消息是=TTS_TEXT_R:0:22k
+09:52:08,557  INFO TTSWCL:83 - 发送到服务的消息是=STOP_TTS
+09:52:08,557  INFO TTSWCL:91 - 返回的语音流长度是= 3961
+09:52:08,668  INFO TTSWCL:91 - 返回的语音流长度是= 3961
+13:23:06,860  INFO TTSClient:96 - 发送到服务器的信息是=BEGIN_TTS:PCM:Li-sa
+13:23:07,060  INFO TTSWCL:66 - 从服务器接受到的消息是=BEGIN_TTS_R:0
+13:23:07,061  INFO TTSWCL:83 - 发送到服务的消息是=TTS_TEXT:中华任命共和国团结万岁
+13:23:07,464  INFO TTSWCL:66 - 从服务器接受到的消息是=TTS_TEXT_R:0:22k
+13:23:07,587  INFO TTSWCL:83 - 发送到服务的消息是=STOP_TTS
+13:23:07,587  INFO TTSWCL:91 - 返回的语音流长度是= 3961
+13:23:07,720  INFO TTSWCL:91 - 返回的语音流长度是= 3961
+13:23:29,626  INFO TTSClient:96 - 发送到服务器的信息是=BEGIN_TTS:PCM:Li-sa
+13:23:29,827  INFO TTSWCL:66 - 从服务器接受到的消息是=BEGIN_TTS_R:0
+13:23:29,828  INFO TTSWCL:83 - 发送到服务的消息是=TTS_TEXT:我得名字是李通
+13:23:30,030  INFO TTSWCL:66 - 从服务器接受到的消息是=TTS_TEXT_R:0:22k
+13:23:30,122  INFO TTSWCL:83 - 发送到服务的消息是=STOP_TTS
+13:23:30,123  INFO TTSWCL:91 - 返回的语音流长度是= 3961
+13:23:30,179  INFO TTSWCL:91 - 返回的语音流长度是= 3961
+10:59:10,682  INFO TTSClient:96 - 发送到服务器的信息是=BEGIN_TTS:PCM:Li-sa
+10:59:10,883  INFO TTSWCL:66 - 从服务器接受到的消息是=BEGIN_TTS_R:0
+10:59:10,883  INFO TTSWCL:83 - 发送到服务的消息是=TTS_TEXT:中华人民共和国团结万岁
+10:59:11,085  INFO TTSWCL:66 - 从服务器接受到的消息是=TTS_TEXT_R:0:22k
+10:59:11,194  INFO TTSWCL:83 - 发送到服务的消息是=STOP_TTS
+10:59:11,194  INFO TTSWCL:91 - 返回的语音流长度是= 3961
+10:59:11,250  INFO TTSWCL:91 - 返回的语音流长度是= 3961
+11:17:07,112  INFO TTSClient:102 - 发送到服务器的信息是=BEGIN_TTS:PCM:Li-sa
+11:17:07,313  INFO TTSWCL:66 - 从服务器接受到的消息是=BEGIN_TTS_R:0
+11:17:07,313  INFO TTSWCL:83 - 发送到服务的消息是=TTS_TEXT:中华人民共和国团结万岁
+11:17:07,716  INFO TTSWCL:66 - 从服务器接受到的消息是=TTS_TEXT_R:0:22k
+11:17:07,822  INFO TTSWCL:83 - 发送到服务的消息是=STOP_TTS
+11:17:07,822  INFO TTSWCL:91 - 返回的语音流长度是= 3961
+11:17:07,873  INFO TTSWCL:91 - 返回的语音流长度是= 3961
