@@ -1,3 +1,0 @@
-之前的转写使用的http请求,下面使用websocket进去重新
-
-计划作废,nte不支持websocket
