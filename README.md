@@ -1,6 +1,6 @@
 # nuance-parent
 
-I am litong a java develper.
+I am litong a java developer.
 
 nte is nuanance transcription enterprise server(语音转写)
 

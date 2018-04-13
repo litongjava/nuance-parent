@@ -21,7 +21,7 @@ import java.util.Map;
  */
 public class SingleThreadNTEClient {
 
-    private static Logger logger = LoggerFactory.getLogger(SingleThreadNTEClient.class);
+    private static Logger log = LoggerFactory.getLogger("ntelogger");
     private NTEHttpClient httpClient;
     private static SingleThreadNTEClient client;
 
@@ -65,13 +65,13 @@ public class SingleThreadNTEClient {
         Map<String, TapeInfo> map = new HashMap<>();
         List<String> list = getList(wav1, null);
         String json = JSONUtil.getDiarizeJson(list, 0, list.size());
-        logger.info("发送json到nte:" + json);
+        log.info("发送json到nte:" + json);
         //计算转写时长
         long start = System.currentTimeMillis();
         JSONObject repJson2 = common(json);
         long end = System.currentTimeMillis();
         long l = (end - start) / 1000;
-        logger.info("第二次响应的信息:" + repJson2.toString());
+        log.info("第二次响应的信息:" + repJson2.toString());
 
 
         for (int i = 0; i < list.size(); i++) {
@@ -84,15 +84,15 @@ public class SingleThreadNTEClient {
             info.setTranscription_time(l);
             //转换时有多个对话
             JSONArray transcript = getTranscript("channel" + (i + 1), repJson2);
-            logger.info("返回的transcript信息" + transcript.toString());
+            log.info("返回的transcript信息" + transcript.toString());
             List<Session> sessions = new ArrayList<Session>();
             for (int j = 0; j < transcript.size(); j++) {
                 Session session = JSON.parseObject(transcript.getString(j), Session.class);
                 sessions.add(session);
             }
             info.setSessions(sessions);
-            logger.info("录音文件名:" + list.get(i).toString());
-            logger.info("对应的录音信息:"+info.toString());
+            log.info("录音文件名:" + list.get(i).toString());
+            log.info("对应的录音信息:"+info.toString());
             map.put(list.get(i),info);
         }
         return map;
@@ -103,7 +103,7 @@ public class SingleThreadNTEClient {
      */
     public Map<String, TapeInfo> vtsDiarize(List<String> wavs) {
         if(wavs.size()<1){
-            logger.info("list中不是存在文件,本次转换返回null");
+            log.info("list中不是存在文件,本次转换返回null");
             return null;
         }
 
@@ -111,7 +111,7 @@ public class SingleThreadNTEClient {
         for (String wav : wavs) {
             //如果文件名相同,就不进行转换
             if(result.containsKey(wav)){
-                logger.info("重复的文件名,不进行转换:"+wav);
+                log.info("重复的文件名,不进行转换:"+wav);
             }else{
 
                 Map<String, TapeInfo> subMap = vtsDiarize(wav);
@@ -143,7 +143,7 @@ public class SingleThreadNTEClient {
     public JSONObject common(String json) {
         //第一次响应的json字符
         String uuid = httpClient.post(json);
-        logger.info("第一次请求的响应:" + uuid);
+        log.info("第一次请求的响应:" + uuid);
         uuid = uuid.substring(14, 50);
         //第二次响应的json字符
         JSONObject repJson2 = null;
@@ -154,7 +154,7 @@ public class SingleThreadNTEClient {
         }
         int i=1;
         String s = httpClient.get("status/" + uuid);
-        logger.info("根据uuid第"+i+"次请求:"+s);
+        log.info("根据uuid第"+i+"次请求:"+s);
         repJson2 = JSON.parseObject(s);
 
         while (!repJson2.getString("status").equals("TRANSCRIBED")) {
@@ -167,7 +167,7 @@ public class SingleThreadNTEClient {
             //在new clent时指定过url,这里只需要指定RESTful
             s = httpClient.get("status/" + uuid);
             i++;
-            logger.info("根据uuid第"+i+"次请求:"+s);
+            log.info("根据uuid第"+i+"次请求:"+s);
             repJson2 = JSON.parseObject(s);
         }
         return repJson2;
@@ -179,7 +179,7 @@ public class SingleThreadNTEClient {
     public boolean getPing() {
         String ping = httpClient.get("ping");
         JSONObject j = JSON.parseObject(ping);
-        logger.info("返回信息:" + j.toString());
+        log.info("返回信息:" + j.toString());
         String status = j.getString("status");
         if (status.equals("WORKING")) {
             return true;
