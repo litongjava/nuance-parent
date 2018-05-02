@@ -9,6 +9,11 @@
 	<artifactId>xfyun-tts</artifactId>
 	<dependencies>
 		<dependency>
+			<groupId>com.hg</groupId>
+			<artifactId>nve-tts</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>

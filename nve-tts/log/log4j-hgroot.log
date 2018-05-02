@@ -24201,3 +24201,46 @@
 22:30:48,456  INFO TTSWebSocketListener:106 - æµå‘é€å®Œæ¯•
 22:30:48,460  INFO WavUtilImplCommon:218 - æ–‡ä»¶é•¿åº¦æ˜¯:98120
 22:30:48,462  INFO WavUtilImplCommon:262 - æ¯ç§’æ’­æ”¾å¸§æ•°ï¼š22000.0
+11:01:51,768  INFO SplitWav:29 - Ö¸¶¨µÄÎÄ¼ş¼Ğ²»´æÔÚ:F:\¹ã¶«µçÍø-3
+11:01:51,770  INFO SplitWav:46 - F:\¹ã¶«µçÍø-3:²»ÊÇwavÎÄ¼ş
+11:01:51,777  INFO TimeUnitTest:76 - ¿ªÊ¼ÑÓ³Ù
+11:01:51,782  INFO TimeUnitTest:82 - ÑÓ³ÙÍê±Ï
+11:01:51,941  INFO TTSClient:102 - ·¢ËÍµ½·şÎñÆ÷µÄĞÅÏ¢ÊÇ=BEGIN_TTS:PCM:Li-sa
+11:01:52,142  INFO TTSWebSocketListener:66 - ´Ó·şÎñÆ÷½ÓÊÜµ½µÄÏûÏ¢ÊÇ=BEGIN_TTS_R:0
+11:01:52,143  INFO TTSWebSocketListener:83 - ·¢ËÍµ½·şÎñµÄÏûÏ¢ÊÇ=TTS_TEXT:ÎÒµÃÃû×ÖÊÇÀîÍ¨
+11:01:52,345  INFO TTSWebSocketListener:66 - ´Ó·şÎñÆ÷½ÓÊÜµ½µÄÏûÏ¢ÊÇ=TTS_TEXT_R:0:22k
+11:01:52,346  INFO TTSWebSocketListener:83 - ·¢ËÍµ½·şÎñµÄÏûÏ¢ÊÇ=STOP_TTS
+11:01:52,347  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,348  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,348  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,349  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,350  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,350  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,350  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,355  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,355  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,356  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,356  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,356  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,357  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,357  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,358  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,358  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,359  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,359  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,360  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 441
+11:01:52,360  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,360  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,361  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,362  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,362  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,363  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 3961
+11:01:52,363  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 2641
+11:01:52,363  INFO TTSWebSocketListener:91 - ·µ»ØµÄÓïÒôÁ÷³¤¶ÈÊÇ= 1
+11:06:51,987  INFO TTSClient:102 - ·¢ËÍµ½·şÎñÆ÷µÄĞÅÏ¢ÊÇ=BEGIN_TTS:PCM:Li-sa
+11:11:52,003  INFO WavUtilImplCommon:212 - ÎÄ¼ş²»´æÔÚ=c:\temp\out.pcm
+11:11:52,005  INFO WAVUtilTest:36 - ·ÖÅä¿Õ¼äÊÇµÄÊı¾İÈçÏÂ
+11:11:52,077  INFO WAVUtilTest:47 - ³õÊ¼»¯ºóµÄÊı¾İÈçÏÂ
+11:11:52,113  INFO WAVUtilTest:58 - Ğ´ÈëºóµÄÊı¾İÈçÏÂ
+11:11:52,153  INFO WavUtilImplCommon:218 - ÎÄ¼ş³¤¶ÈÊÇ:219904
+11:11:52,157  INFO WavUtilImplCommon:262 - Ã¿Ãë²¥·ÅÖ¡Êı£º22000.0

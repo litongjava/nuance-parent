@@ -1,0 +1,767 @@
+{
+	"status": "TRANSCRIBED",
+	"reference": "1462f1b89d9c4baab4652ab757870168",
+	"sequence": 4,
+	"operating_mode": "warp",
+	"channels": {
+		"test-001": {
+			"errors": [],
+			"lattice": {
+				"1": {
+					"links": {
+						"0": {
+							"start": 0,
+							"end": 2.6,
+							"weight": 0,
+							"best_path": true,
+							"word": "!ENTER",
+							"intensity": 0
+						},
+						"1": {
+							"start": 2.6,
+							"end": 6.24,
+							"weight": -0.031844,
+							"best_path": true,
+							"word": "你好",
+							"intensity": 0
+						},
+						"2": {
+							"start": 2.6,
+							"end": 6.24,
+							"weight": -3.462795,
+							"best_path": false,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"3": {
+							"start": 6.24,
+							"end": 9.6,
+							"weight": -0.40209,
+							"best_path": true,
+							"word": "你好",
+							"intensity": 0
+						},
+						"4": {
+							"start": 6.24,
+							"end": 9.6,
+							"weight": -1.105398,
+							"best_path": false,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"5": {
+							"start": 9.6,
+							"end": 10.22,
+							"weight": 0,
+							"best_path": true,
+							"word": "你好",
+							"intensity": 0
+						},
+						"6": {
+							"start": 10.22,
+							"end": 10.656,
+							"weight": 0,
+							"best_path": true,
+							"word": "!EXIT",
+							"intensity": 0
+						},
+						"7": {
+							"start": 10.656,
+							"end": 11.396,
+							"weight": 0,
+							"best_path": true,
+							"word": "!ENTER",
+							"intensity": 0
+						},
+						"8": {
+							"start": 11.396,
+							"end": 11.536,
+							"weight": -0.017916,
+							"best_path": true,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"9": {
+							"start": 11.396,
+							"end": 11.536,
+							"weight": -4.030993,
+							"best_path": false,
+							"word": "他",
+							"intensity": 0
+						},
+						"10": {
+							"start": 11.536,
+							"end": 12.196,
+							"weight": -0.116762,
+							"best_path": true,
+							"word": "赶紧",
+							"intensity": 0
+						},
+						"11": {
+							"start": 11.536,
+							"end": 12.196,
+							"weight": -2.205428,
+							"best_path": false,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"12": {
+							"start": 12.196,
+							"end": 13.896,
+							"weight": -0.139695,
+							"best_path": true,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"13": {
+							"start": 12.196,
+							"end": 13.896,
+							"weight": -2.599691,
+							"best_path": false,
+							"word": "我",
+							"intensity": 0
+						},
+						"14": {
+							"start": 12.196,
+							"end": 13.896,
+							"weight": -3.449732,
+							"best_path": false,
+							"word": "你",
+							"intensity": 0
+						},
+						"15": {
+							"start": 12.196,
+							"end": 13.896,
+							"weight": -3.716208,
+							"best_path": false,
+							"word": "为",
+							"intensity": 0
+						},
+						"16": {
+							"start": 13.896,
+							"end": 14.236,
+							"weight": -0.077201,
+							"best_path": true,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"17": {
+							"start": 13.896,
+							"end": 14.236,
+							"weight": -2.599691,
+							"best_path": false,
+							"word": "已经",
+							"intensity": 0
+						},
+						"18": {
+							"start": 14.236,
+							"end": 14.396,
+							"weight": -0.179962,
+							"best_path": true,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"19": {
+							"start": 14.236,
+							"end": 14.396,
+							"weight": -1.892151,
+							"best_path": false,
+							"word": "打了",
+							"intensity": 0
+						},
+						"20": {
+							"start": 14.236,
+							"end": 14.396,
+							"weight": -5.374037,
+							"best_path": false,
+							"word": "把",
+							"intensity": 0
+						},
+						"21": {
+							"start": 14.236,
+							"end": 14.396,
+							"weight": -5.516957,
+							"best_path": false,
+							"word": "哈喽",
+							"intensity": 0
+						},
+						"22": {
+							"start": 14.236,
+							"end": 14.396,
+							"weight": -5.846308,
+							"best_path": false,
+							"word": "发了",
+							"intensity": 0
+						},
+						"23": {
+							"start": 14.236,
+							"end": 14.396,
+							"weight": -6.029347,
+							"best_path": false,
+							"word": "打",
+							"intensity": 0
+						},
+						"24": {
+							"start": 14.396,
+							"end": 14.616,
+							"weight": -0.05409,
+							"best_path": true,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"25": {
+							"start": 14.396,
+							"end": 14.616,
+							"weight": -2.944034,
+							"best_path": false,
+							"word": "了",
+							"intensity": 0
+						},
+						"26": {
+							"start": 14.616,
+							"end": 14.996,
+							"weight": -0.333304,
+							"best_path": true,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"27": {
+							"start": 14.616,
+							"end": 14.996,
+							"weight": -1.30901,
+							"best_path": false,
+							"word": "把",
+							"intensity": 0
+						},
+						"28": {
+							"start": 14.616,
+							"end": 14.996,
+							"weight": -4.57828,
+							"best_path": false,
+							"word": "八",
+							"intensity": 0
+						},
+						"29": {
+							"start": 14.616,
+							"end": 14.996,
+							"weight": -6.246001,
+							"best_path": false,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"30": {
+							"start": 14.616,
+							"end": 14.996,
+							"weight": -6.873253,
+							"best_path": false,
+							"word": "喂",
+							"intensity": 0
+						},
+						"31": {
+							"start": 14.616,
+							"end": 14.996,
+							"weight": -9.074308,
+							"best_path": false,
+							"word": "最",
+							"intensity": 0
+						},
+						"32": {
+							"start": 14.996,
+							"end": 15.136,
+							"weight": -0.033231,
+							"best_path": true,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"33": {
+							"start": 14.996,
+							"end": 15.136,
+							"weight": -3.798161,
+							"best_path": false,
+							"word": "我",
+							"intensity": 0
+						},
+						"34": {
+							"start": 14.996,
+							"end": 15.136,
+							"weight": -4.57828,
+							"best_path": false,
+							"word": "个",
+							"intensity": 0
+						},
+						"35": {
+							"start": 15.136,
+							"end": 15.456,
+							"weight": -0.458095,
+							"best_path": true,
+							"word": "你好",
+							"intensity": 0
+						},
+						"36": {
+							"start": 15.136,
+							"end": 15.456,
+							"weight": -1.741683,
+							"best_path": false,
+							"word": "好",
+							"intensity": 0
+						},
+						"37": {
+							"start": 15.136,
+							"end": 15.456,
+							"weight": -1.996323,
+							"best_path": false,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"38": {
+							"start": 15.136,
+							"end": 15.456,
+							"weight": -3.059217,
+							"best_path": false,
+							"word": "不好",
+							"intensity": 0
+						},
+						"39": {
+							"start": 15.136,
+							"end": 15.456,
+							"weight": -4.808952,
+							"best_path": false,
+							"word": "滚",
+							"intensity": 0
+						},
+						"40": {
+							"start": 15.136,
+							"end": 15.456,
+							"weight": -6.917287,
+							"best_path": false,
+							"word": "通过",
+							"intensity": 0
+						},
+						"41": {
+							"start": 15.136,
+							"end": 15.456,
+							"weight": -7.868849,
+							"best_path": false,
+							"word": "关",
+							"intensity": 0
+						},
+						"42": {
+							"start": 15.456,
+							"end": 18.596001,
+							"weight": -0.022632,
+							"best_path": true,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"43": {
+							"start": 15.456,
+							"end": 18.596001,
+							"weight": -4.286247,
+							"best_path": false,
+							"word": "了",
+							"intensity": 0
+						},
+						"44": {
+							"start": 15.456,
+							"end": 18.596001,
+							"weight": -5.101321,
+							"best_path": false,
+							"word": "慢",
+							"intensity": 0
+						},
+						"45": {
+							"start": 15.456,
+							"end": 18.596001,
+							"weight": -6.165362,
+							"best_path": false,
+							"word": "吗",
+							"intensity": 0
+						},
+						"46": {
+							"start": 15.456,
+							"end": 18.596001,
+							"weight": -7.854792,
+							"best_path": false,
+							"word": "办",
+							"intensity": 0
+						},
+						"47": {
+							"start": 15.456,
+							"end": 18.596001,
+							"weight": -10.036801,
+							"best_path": false,
+							"word": "的",
+							"intensity": 0
+						},
+						"48": {
+							"start": 18.596001,
+							"end": 19.455999,
+							"weight": 0,
+							"best_path": true,
+							"word": "!EXIT",
+							"intensity": 0
+						},
+						"49": {
+							"start": 19.455999,
+							"end": 23.636,
+							"weight": 0,
+							"best_path": true,
+							"word": "!ENTER",
+							"intensity": 0
+						},
+						"50": {
+							"start": 23.636,
+							"end": 23.995998,
+							"weight": 0,
+							"best_path": true,
+							"word": "明天",
+							"intensity": 0
+						},
+						"51": {
+							"start": 23.995998,
+							"end": 24.316,
+							"weight": 0,
+							"best_path": true,
+							"word": "天气",
+							"intensity": 0
+						},
+						"52": {
+							"start": 24.316,
+							"end": 26.535999,
+							"weight": 0,
+							"best_path": true,
+							"word": "怎么样",
+							"intensity": 0
+						},
+						"53": {
+							"start": 26.535999,
+							"end": 26.896,
+							"weight": 0,
+							"best_path": true,
+							"word": "明天",
+							"intensity": 0
+						},
+						"54": {
+							"start": 26.896,
+							"end": 27.216,
+							"weight": 0,
+							"best_path": true,
+							"word": "北京",
+							"intensity": 0
+						},
+						"55": {
+							"start": 27.216,
+							"end": 27.535999,
+							"weight": 0,
+							"best_path": true,
+							"word": "天气",
+							"intensity": 0
+						},
+						"56": {
+							"start": 27.535999,
+							"end": 27.935999,
+							"weight": 0,
+							"best_path": true,
+							"word": "怎么样",
+							"intensity": 0
+						},
+						"57": {
+							"start": 27.935999,
+							"end": 28.736,
+							"weight": -0.007071,
+							"best_path": true,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"58": {
+							"start": 27.935999,
+							"end": 28.736,
+							"weight": -5.04106,
+							"best_path": false,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"59": {
+							"start": 27.935999,
+							"end": 28.736,
+							"weight": -7.454075,
+							"best_path": false,
+							"word": "的",
+							"intensity": 0
+						},
+						"60": {
+							"start": 28.736,
+							"end": 29.424,
+							"weight": 0,
+							"best_path": true,
+							"word": "!EXIT",
+							"intensity": 0
+						},
+						"61": {
+							"start": 29.424,
+							"end": 30.004,
+							"weight": 0,
+							"best_path": true,
+							"word": "!ENTER",
+							"intensity": 0
+						},
+						"62": {
+							"start": 30.004,
+							"end": 30.604,
+							"weight": 0,
+							"best_path": true,
+							"word": "明天",
+							"intensity": 0
+						},
+						"63": {
+							"start": 30.604,
+							"end": 31.044001,
+							"weight": -0.2358,
+							"best_path": true,
+							"word": "后天",
+							"intensity": 0
+						},
+						"64": {
+							"start": 30.604,
+							"end": 31.044001,
+							"weight": -1.793289,
+							"best_path": false,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"65": {
+							"start": 30.604,
+							"end": 31.044001,
+							"weight": -3.131564,
+							"best_path": false,
+							"word": ",",
+							"intensity": 0
+						},
+						"66": {
+							"start": 31.044001,
+							"end": 31.464001,
+							"weight": -0.006586,
+							"best_path": true,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"67": {
+							"start": 31.044001,
+							"end": 31.464001,
+							"weight": -5.186737,
+							"best_path": false,
+							"word": "天气",
+							"intensity": 0
+						},
+						"68": {
+							"start": 31.044001,
+							"end": 31.464001,
+							"weight": -7.110262,
+							"best_path": false,
+							"word": "天一",
+							"intensity": 0
+						},
+						"69": {
+							"start": 31.044001,
+							"end": 31.464001,
+							"weight": -8.75795,
+							"best_path": false,
+							"word": "今天",
+							"intensity": 0
+						},
+						"70": {
+							"start": 31.464001,
+							"end": 32.063999,
+							"weight": 0,
+							"best_path": true,
+							"word": "!EXIT",
+							"intensity": 0
+						}
+					}
+				}
+			},
+			"partial_lattice": {
+				"1": {
+					"links": {
+						"0": {
+							"start": 19.455999,
+							"end": 23.636,
+							"weight": 0,
+							"best_path": true,
+							"word": "!ENTER",
+							"intensity": 0
+						},
+						"1": {
+							"start": 23.636,
+							"end": 23.995998,
+							"weight": 0,
+							"best_path": true,
+							"word": "明天",
+							"intensity": 0
+						},
+						"2": {
+							"start": 23.995998,
+							"end": 24.316,
+							"weight": 0,
+							"best_path": true,
+							"word": "天气",
+							"intensity": 0
+						},
+						"3": {
+							"start": 24.316,
+							"end": 26.535999,
+							"weight": 0,
+							"best_path": true,
+							"word": "怎么样",
+							"intensity": 0
+						},
+						"4": {
+							"start": 26.535999,
+							"end": 26.896,
+							"weight": 0,
+							"best_path": true,
+							"word": "明天",
+							"intensity": 0
+						},
+						"5": {
+							"start": 26.896,
+							"end": 27.216,
+							"weight": 0,
+							"best_path": true,
+							"word": "北京",
+							"intensity": 0
+						},
+						"6": {
+							"start": 27.216,
+							"end": 27.535999,
+							"weight": 0,
+							"best_path": true,
+							"word": "天气",
+							"intensity": 0
+						},
+						"7": {
+							"start": 27.535999,
+							"end": 27.935999,
+							"weight": 0,
+							"best_path": true,
+							"word": "怎么样",
+							"intensity": 0
+						},
+						"8": {
+							"start": 27.935999,
+							"end": 28.736,
+							"weight": -0.007071,
+							"best_path": true,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"9": {
+							"start": 27.935999,
+							"end": 28.736,
+							"weight": -5.04106,
+							"best_path": false,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"10": {
+							"start": 27.935999,
+							"end": 28.736,
+							"weight": -7.454075,
+							"best_path": false,
+							"word": "的",
+							"intensity": 0
+						},
+						"11": {
+							"start": 28.736,
+							"end": 29.424,
+							"weight": 0,
+							"best_path": true,
+							"word": "!EXIT",
+							"intensity": 0
+						},
+						"12": {
+							"start": 29.424,
+							"end": 30.004,
+							"weight": 0,
+							"best_path": true,
+							"word": "!ENTER",
+							"intensity": 0
+						},
+						"13": {
+							"start": 30.004,
+							"end": 30.604,
+							"weight": 0,
+							"best_path": true,
+							"word": "明天",
+							"intensity": 0
+						},
+						"14": {
+							"start": 30.604,
+							"end": 31.044001,
+							"weight": -0.2358,
+							"best_path": true,
+							"word": "后天",
+							"intensity": 0
+						},
+						"15": {
+							"start": 30.604,
+							"end": 31.044001,
+							"weight": -1.793289,
+							"best_path": false,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"16": {
+							"start": 30.604,
+							"end": 31.044001,
+							"weight": -3.131564,
+							"best_path": false,
+							"word": ",",
+							"intensity": 0
+						},
+						"17": {
+							"start": 31.044001,
+							"end": 31.464001,
+							"weight": -0.006586,
+							"best_path": true,
+							"word": "!NULL",
+							"intensity": 0
+						},
+						"18": {
+							"start": 31.044001,
+							"end": 31.464001,
+							"weight": -5.186737,
+							"best_path": false,
+							"word": "天气",
+							"intensity": 0
+						},
+						"19": {
+							"start": 31.044001,
+							"end": 31.464001,
+							"weight": -7.110262,
+							"best_path": false,
+							"word": "天一",
+							"intensity": 0
+						},
+						"20": {
+							"start": 31.044001,
+							"end": 31.464001,
+							"weight": -8.75795,
+							"best_path": false,
+							"word": "今天",
+							"intensity": 0
+						},
+						"21": {
+							"start": 31.464001,
+							"end": 32.063999,
+							"weight": 0,
+							"best_path": true,
+							"word": "!EXIT",
+							"intensity": 0
+						}
+					}
+				}
+			}
+		}
+	}
+}

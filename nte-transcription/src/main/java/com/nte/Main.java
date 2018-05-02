@@ -1,13 +1,9 @@
 package com.nte;
 
-import com.nte.http.util.NTEClient;
-import com.nte.http.util.NTEHttpClient;
+import java.util.Map;
+
 import com.nte.http.util.SingleThreadNTEClient;
 import com.nte.pojo.TapeInfo;
-
-import javax.swing.text.html.parser.Entity;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * Created by litong on 2017/11/29.

@@ -20,38 +20,38 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.hg.utils.WavUtil;
-
 /**
- * 创建人：litong 创建时间：2017年12月31日 下午9:14:10
+ * @author litong 
+ * @date 2017年12月31日 下午9:14:10
  * 
  * @version
  */
 public class WavUtilImplCommon{
 	private static Logger log = LoggerFactory.getLogger(WavUtilImplCommon.class);
 
-	public static void pcmToWav(String inFilename, String outFilename, String SampleRate) {
-		int mSampleRate = 22000;
-		if (SampleRate.equals("22k")) {
-			mSampleRate = 22000;
-		} else if (SampleRate.equals("16k")) {
-			mSampleRate = 16000;
-		} else if (SampleRate.equals("8k")) {
-			mSampleRate = 8000;
-		}
+	/**
+	 * pcm 转成wav格式
+	 * @param src 源文件全路径
+	 * @param target 目标文件全路径
+	 * @param sampleRate pcm文件1S时间内采取样的个数,有 8000,1600,
+	 */
+	public static void pcmToWav(String src, String target, int sampleRate) {
+		
 		int mBufferSize = 1024;
 
-		FileInputStream in;
-		FileOutputStream out;
+		FileInputStream in=null;
+		FileOutputStream out=null;
 		long totalAudioLen;
 		long totalDataLen;
-		long longSampleRate = mSampleRate;
+		long longSampleRate = sampleRate;
+		//通道数
 		int channels = 1;
-		long byteRate = 16 * mSampleRate * channels / 8;
+		//字节频率,1个样本的大小是16bit,字节频率是一秒钟的字节大小
+		long byteRate = 16 * sampleRate * channels / 8;
 		byte[] data = new byte[mBufferSize];
 		try {
-			in = new FileInputStream(inFilename);
-			out = new FileOutputStream(outFilename);
+			in = new FileInputStream(src);
+			out = new FileOutputStream(target);
 			totalAudioLen = in.getChannel().size();
 			totalDataLen = totalAudioLen + 36;
 

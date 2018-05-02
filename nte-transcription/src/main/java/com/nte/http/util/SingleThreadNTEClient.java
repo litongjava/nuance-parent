@@ -1,19 +1,18 @@
 package com.nte.http.util;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.nte.pojo.Session;
 import com.nte.pojo.TapeInfo;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Created by litong on 2017/9/21.
@@ -203,7 +202,7 @@ public class SingleThreadNTEClient {
     }
 
     //拼接list
-    private List getList(String wav1, String wav2) {
+    private List<String> getList(String wav1, String wav2) {
         List<String> list = new ArrayList<String>();
         if (wav1 != null) {
             list.add(wav1);

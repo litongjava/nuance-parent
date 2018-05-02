@@ -2,8 +2,6 @@ package com.hg.utils;
 
 import static org.junit.Assert.fail;
 
-import java.io.File;
-
 import org.junit.Test;
 
 public class NveJaveUtilTest {
@@ -20,5 +18,4 @@ public class NveJaveUtilTest {
 		String target="D:\\音频\\out-13030030033-2092-20180119-171718-1516353438.84268.mp3";
 		NveJaveUtil.wavToMp3(source);
 	}
-
 }

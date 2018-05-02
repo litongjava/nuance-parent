@@ -1,10 +1,12 @@
 package com.hg.xfyuntts;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
 import java.io.File;
 
 import org.junit.Test;
+
+import com.iflytek.cloud.speech.Setting;
 
 public class XfyunTTSClientTest {
 
@@ -23,7 +25,10 @@ public class XfyunTTSClientTest {
 	 */
 	@Test
 	public void testToFile() {
-	    XfyunTTSClient.toFile("我的名字是李通");
+		String pcmFile="./iamlitong.pcm";
+		String sampleRete="8000";
+	    XfyunTTSClient.toFile("我的名字是李通",pcmFile,sampleRete);
+	    //WavUtilImplCommon.pcmToWav(pcmFile, "./test.wav", Integer.valueOf(sampleRete));
 	}
 	
 	/**
@@ -31,6 +36,7 @@ public class XfyunTTSClientTest {
 	 */
 	@Test
 	public void testPalyFile() {
+		Setting.setShowLog(true);
 	    XfyunTTSClient.playText("中华人民共和国");
 	}
 

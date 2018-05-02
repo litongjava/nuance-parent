@@ -1,12 +1,9 @@
 package com.hg.utils;
 
-import it.sauronsoftware.jave.EncoderException;
-import it.sauronsoftware.jave.InputFormatException;
-import org.junit.Test;
-
 import java.io.File;
 
-import static org.junit.Assert.*;
+import it.sauronsoftware.jave.EncoderException;
+import it.sauronsoftware.jave.InputFormatException;
 
 /**
  * Created by litong on 2018/1/17.

@@ -1,6 +1,6 @@
 package com.hg.utils.impl;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
 import java.io.File;
 
@@ -29,7 +29,7 @@ public class WavUtilImplCommonTest {
 	
 	@Test
 	public void test3(){
-		WavUtilImplCommon.pcmToWav("D:\\dev_gitRepository\\nuance-parent\\xfyun-tts\\tts_test.pcm", "./tts_test.wav", "8k");
+		WavUtilImplCommon.pcmToWav("D:\\dev_gitRepository\\nuance-parent\\xfyun-tts\\tts_test.pcm", "./tts_test.wav", 8000);
 	}
 	
 	/**
