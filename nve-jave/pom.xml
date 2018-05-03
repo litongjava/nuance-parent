@@ -32,6 +32,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.20</version>
+		</dependency>
+
+		<dependency>
 			<groupId>com.neovisionaries</groupId>
 			<artifactId>nv-websocket-client</artifactId>
 			<version>1.30</version>

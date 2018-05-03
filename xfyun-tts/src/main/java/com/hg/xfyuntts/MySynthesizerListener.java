@@ -1,5 +1,8 @@
 package com.hg.xfyuntts;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.iflytek.cloud.speech.SpeechError;
 import com.iflytek.cloud.speech.SynthesizerListener;
 
@@ -8,6 +11,9 @@ import com.iflytek.cloud.speech.SynthesizerListener;
  * 
  */
 public class MySynthesizerListener implements SynthesizerListener {
+	
+	private static final Logger log = LoggerFactory.getLogger(MySynthesizerListener.class);
+
 	// 会话结束回调接口，没有错误时，error为null
 	public void onCompleted(SpeechError error) {
 	}
@@ -28,6 +34,7 @@ public class MySynthesizerListener implements SynthesizerListener {
 	// 播放进度回调
 	// percent为播放进度0~100,beginPos为播放音频在文本中开始位置，endPos表示播放音频在文本中结束位置.
 	public void onSpeakProgress(int percent, int beginPos, int endPos) {
+		log.info("percent is : " + percent);
 	}
 
 	// 恢复播放回调接口

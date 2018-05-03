@@ -6,6 +6,7 @@ import java.io.File;
 
 import org.junit.Test;
 
+import com.hg.utils.impl.WavUtilImplCommon;
 import com.iflytek.cloud.speech.Setting;
 
 public class XfyunTTSClientTest {
@@ -28,7 +29,7 @@ public class XfyunTTSClientTest {
 		String pcmFile="./iamlitong.pcm";
 		String sampleRete="8000";
 	    XfyunTTSClient.toFile("我的名字是李通",pcmFile,sampleRete);
-	    //WavUtilImplCommon.pcmToWav(pcmFile, "./test.wav", Integer.valueOf(sampleRete));
+	    WavUtilImplCommon.pcmToWav(pcmFile, "./test.wav", Integer.valueOf(sampleRete));
 	}
 	
 	/**

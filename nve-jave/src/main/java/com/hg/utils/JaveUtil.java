@@ -1,7 +1,6 @@
 package com.hg.utils;
 
 import java.io.File;
-import java.lang.annotation.Target;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,11 +13,18 @@ import it.sauronsoftware.jave.EncoderException;
 import it.sauronsoftware.jave.EncodingAttributes;
 import it.sauronsoftware.jave.InputFormatException;
 
-public class NveJaveUtil {
-	private static Logger log = Logger.getLogger(NveJaveUtil.class);
+public class JaveUtil {
+	private static Logger log = Logger.getLogger(JaveUtil.class);
+	
+	//wav文件 参数 开始
+	private static final String CODEC="pcm_s16le";
+	private static final Integer CHANNELS=new Integer(1);
+	private static final Integer SAMPLERATE=new Integer(8000);
+	private static final Integer BITRATE=new Integer(123);
+	//wav 文件参数结束
 
 	/**
-	 * 格式话音频文件为wav格式
+	 * mp3转换成wav格式
 	 *
 	 * @throws IllegalArgumentException
 	 * @throws InputFormatException
@@ -28,19 +34,22 @@ public class NveJaveUtil {
 			throws IllegalArgumentException, InputFormatException, EncoderException {
 		File file = new File(filename);
 
+		/**
+		 * 设置转换后的文件名
+		 */
 		String pathFile = filename;
 		String path = pathFile.substring(0, pathFile.lastIndexOf("\\") + 1);
 		String fileName = pathFile.substring(pathFile.lastIndexOf("\\") + 1, pathFile.lastIndexOf("."));
 
-		String s = path + fileName + ".wav";
-
 		File target = new File(path + fileName + ".wav");
 
+		//设置目标格式 开始
 		AudioAttributes audio = new AudioAttributes();
-		audio.setCodec("pcm_s16le");
-		audio.setBitRate(new Integer(256));
-		audio.setChannels(new Integer(1));
-		audio.setSamplingRate(new Integer(16000));
+		audio.setCodec(CODEC);
+		audio.setChannels(CHANNELS);
+		audio.setSamplingRate(SAMPLERATE);
+		audio.setBitRate(BITRATE);
+		//设置目标格式结束
 		EncodingAttributes attrs = new EncodingAttributes();
 		attrs.setFormat("wav");
 		attrs.setAudioAttributes(audio);
@@ -68,7 +77,7 @@ public class NveJaveUtil {
 	}
 
 	/**
-	 * wav==>>mpc
+	 * wav==>>mp3
 	 * 
 	 * @param source
 	 * @param desFileName
@@ -93,12 +102,13 @@ public class NveJaveUtil {
 		encoder.encode(new File(source), new File(target), attrs);
 		return target;
 	}
+
 	/**
 	 * mp3==>wav
 	 * 转换后在相同相同目录下
 	 */
-	public static String wavToMp3(String source){
-		String target = source.replace(".wav",".mp3");
+	public static String wavToMp3(String source) {
+		String target = source.replace(".wav", ".mp3");
 		try {
 			wavToMp3(source, target);
 		} catch (Exception e) {
@@ -107,20 +117,21 @@ public class NveJaveUtil {
 		return target;
 	}
 
-//	public static void main(String[] args) {
-//		try {
-//			formatMp3ToWav("D:\\Program Files\\apache-tomcat-7-8000\\webapps\\tape\\t92022000_20180110_085357.mp3");
-//
-//		} catch (IllegalArgumentException e) {
-//			log.info("参数不合法");
-//			e.printStackTrace();
-//		} catch (InputFormatException e) {
-//			log.info("输入文件格式异常");
-//			e.printStackTrace();
-//		} catch (EncoderException e) {
-//			log.info("编码异常");
-//			e.printStackTrace();
-//		}
-//	}
+	// public static void main(String[] args) {
+	// try {
+	// formatMp3ToWav("D:\\Program
+	// Files\\apache-tomcat-7-8000\\webapps\\tape\\t92022000_20180110_085357.mp3");
+	//
+	// } catch (IllegalArgumentException e) {
+	// log.info("参数不合法");
+	// e.printStackTrace();
+	// } catch (InputFormatException e) {
+	// log.info("输入文件格式异常");
+	// e.printStackTrace();
+	// } catch (EncoderException e) {
+	// log.info("编码异常");
+	// e.printStackTrace();
+	// }
+	// }
 
 }
